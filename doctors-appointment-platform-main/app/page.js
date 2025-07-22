@@ -26,7 +26,7 @@ export default function Home() {
                 <span className="gradient-title">anytime, anywhere</span>
               </h1>
               <p className="text-muted-foreground text-lg md:text-xl max-w-md">
-                Book appointments, consult via video, and manage your healthcare
+                Book appointments and manage your healthcare
                 journey all in one secure platform.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -161,6 +161,34 @@ export default function Home() {
           </div>
         </div>
       </section>
+{/* AI Agent Therapy Section */}
+<section className="py-20 bg-muted/30">
+  <div className="container mx-auto px-4">
+    <div className="bg-background border border-muted rounded-xl shadow-lg p-10 text-center">
+      <Badge
+        variant="outline"
+        className="bg-emerald-900/30 border-emerald-700/30 px-4 py-1 text-emerald-400 text-sm font-medium mb-4"
+      >
+        New Feature
+      </Badge>
+      <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+        Check Our AI Agent Therapy
+      </h2>
+      <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
+        Discover a smarter way to support your mental well-being with our AI-powered therapy assistant.
+      </p>
+      <Button
+        asChild
+        size="lg"
+        className="bg-emerald-600 text-white hover:bg-emerald-700"
+      >
+        <Link href="https://localhost:3000" target="_blank">
+          Try Now <ArrowRight className="ml-2 h-4 w-4" />
+        </Link>
+      </Button>
+    </div>
+  </div>
+</section>
 
       {/* Testimonials with green medical accents */}
       <section className="py-20 bg-muted/30">
